@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <!-- Global Header Navigation Partial -->
+  <%- include('partials/nav') %>
+
+  <main>
+    <!-- Page Header Banner Partial -->
+    <%- include('partials/header', { 
+      title: 'Our Services & Training Programs', 
+      subtitle: 'Specialized engineering tracks, cybersecurity labs, and custom software development solutions.' 
+    }) %>
+
+    <!-- SERVICE OFFERINGS SECTION -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-heading">Core Technical Programs</h2>
+          <p>Explore our specialized software training, security internships, and business operations tracks.</p>
+        </div>
+
+        <div class="services-detailed-grid">
+          
+          <!-- Service 1: Software Development Training -->
+          <div class="service-card">
+            <div class="service-card-header">
+              <h3>Software Development Training</h3>
+              <p class="service-description">Full-stack web and mobile application engineering training designed for computer science students and junior developers.</p>
+            </div>
+            <div class="service-checklist-title">Program Includes</div>
+            <ul class="service-checklist">
+              <li>Real client-style production projects</li>
+              <li>One-on-one code reviews & engineering mentorship</li>
+              <li>MERN stack (MongoDB, Express, React, Node.js) & SQL focus</li>
+              <li>REST API design & version control workflows</li>
+            </ul>
+          </div>
+
+          <!-- Service 2: Cybersecurity Internship Program (Teal Circuit Accent) -->
+          <div class="service-card circuit-accent">
+            <div class="service-card-header">
+              <h3>Cybersecurity Internship Program</h3>
+              <p class="service-description">Practical hands-on internship track covering network security, ethical hacking fundamentals, and secure coding practices.</p>
+            </div>
+            <div class="service-checklist-title">Program Includes</div>
+            <ul class="service-checklist">
+              <li>Vulnerability assessment & penetration testing labs</li>
+              <li>Security auditing & OWASP Top 10 compliance exercises</li>
+              <li>Industry best practices & secure architecture design</li>
+              <li>Certification preparation guidance (Security+, CEH)</li>
+            </ul>
+          </div>
+
+          <!-- Service 3: Business & Marketing Operations Training -->
+          <div class="service-card">
+            <div class="service-card-header">
+              <h3>Business & Marketing Operations Training</h3>
+              <p class="service-description">Practical training bridging software solutions with digital marketing, client management, and tech business operations.</p>
+            </div>
+            <div class="service-checklist-title">Program Includes</div>
+            <ul class="service-checklist">
+              <li>Live digital marketing campaign work & strategy</li>
+              <li>Enterprise CRM exposure & workflow integration</li>
+              <li>Client-facing communication & project scoping</li>
+              <li>Business strategy fundamentals & startup scaling</li>
+            </ul>
+          </div>
+
+          <!-- Service 4: Custom Software Development Services -->
+          <div class="service-card">
+            <div class="service-card-header">
+              <h3>Custom Software Development Services</h3>
+              <p class="service-description">Dedicated software development services for corporate clients and SMEs, built by supervised interns and senior engineers.</p>
+            </div>
+            <div class="service-checklist-title">Services Include</div>
+            <ul class="service-checklist">
+              <li>Responsive website & web portal development</li>
+              <li>Internal business tools & workflow automation apps</li>
+              <li>Database-driven web applications & API integrations</li>
+              <li>Ongoing application maintenance, hosting & security monitoring</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CLOSING CTA SECTION -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-container">
+          <h2 class="cta-title">Not Sure Which Program Fits You?</h2>
+          <p class="cta-text">
+            Contact our team for guidance tailored to your career goals or custom business development requirements.
+          </p>
+          <a href="/contact" class="btn btn-primary">Contact Our Team</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Footer Partial -->
+  <%- include('partials/footer') %>
+
+</body>
+</html>

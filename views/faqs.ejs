@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <!-- Global Header Navigation Partial -->
+  <%- include('partials/nav') %>
+
+  <main>
+    <!-- Page Header Banner Partial -->
+    <%- include('partials/header', { 
+      title: 'Frequently Asked Questions', 
+      subtitle: 'Find answers regarding our internship stipends, hiring process, cybersecurity labs, and career tracks.' 
+    }) %>
+
+    <!-- FAQS ACCORDION SECTION -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header" style="max-width: 850px; margin-left: auto; margin-right: auto;">
+          <h2 class="section-heading">Common Queries & Answers</h2>
+          <p>Everything you need to know about joining Bi-Tech Marketing Solutions as an intern or full-time engineer.</p>
+        </div>
+
+        <div class="faq-accordion-container">
+          
+          <!-- Q1 -->
+          <details class="faq-accordion-item" open>
+            <summary class="faq-accordion-summary">Do I need prior experience to apply for an internship?</summary>
+            <div class="faq-accordion-body">
+              <p>No, our internship tracks are explicitly designed for computer science students and recent graduates. We provide structured mentorship, one-on-one code reviews, and guided onboarding from senior software leads to help you build production-level skills from day one.</p>
+            </div>
+          </details>
+
+          <!-- Q2 -->
+          <details class="faq-accordion-item">
+            <summary class="faq-accordion-summary">Are the internships paid?</summary>
+            <div class="faq-accordion-body">
+              <p>Yes, all Bi-Tech internship programs include a competitive monthly stipend, a formal completion certificate, and recommendation letters for high-performing candidates.</p>
+            </div>
+          </details>
+
+          <!-- Q3 -->
+          <details class="faq-accordion-item">
+            <summary class="faq-accordion-summary">What is the duration of a typical internship?</summary>
+            <div class="faq-accordion-body">
+              <p>Internship durations range from 3 to 6 months depending on the specific track (e.g. 3-month cybersecurity research labs or 6-month full-stack development tracks).</p>
+            </div>
+          </details>
+
+          <!-- Q4 -->
+          <details class="faq-accordion-item">
+            <summary class="faq-accordion-summary">Can internships lead to full-time job offers?</summary>
+            <div class="faq-accordion-body">
+              <p>Absolutely. Over 60% of our current full-time software engineering and IT staff started as Bi-Tech interns before transitioning to permanent roles.</p>
+            </div>
+          </details>
+
+          <!-- Q5 -->
+          <details class="faq-accordion-item">
+            <summary class="faq-accordion-summary">Do you offer remote positions?</summary>
+            <div class="faq-accordion-body">
+              <p>Yes, select roles in software development and digital marketing support remote work. Other specialized tracks, such as hardware security labs, take place on-site at our Multan office in Punjab, Pakistan.</p>
+            </div>
+          </details>
+
+          <!-- Q6 -->
+          <details class="faq-accordion-item">
+            <summary class="faq-accordion-summary">How do I apply for a job or internship?</summary>
+            <div class="faq-accordion-body">
+              <p>Simply browse our <a href="/jobs" class="text-link">Jobs & Internships page</a>, select your position of interest, and submit your details via our <a href="/contact" class="text-link">Contact form</a> mentioning the specific role ID.</p>
+            </div>
+          </details>
+
+          <!-- Q7 -->
+          <details class="faq-accordion-item">
+            <summary class="faq-accordion-summary">What technologies or skills will I learn during the Software Development track?</summary>
+            <div class="faq-accordion-body">
+              <p>You will work directly with Node.js, Express, EJS, SQL/NoSQL databases, RESTful API design, Git version control, automated testing, and modern cloud deployment pipelines.</p>
+            </div>
+          </details>
+
+          <!-- Q8 -->
+          <details class="faq-accordion-item">
+            <summary class="faq-accordion-summary">Does Bi-Tech Marketing Solutions offer cybersecurity certifications?</summary>
+            <div class="faq-accordion-body">
+              <p>While we do not issue formal vendor certifications directly, our practical lab-based training equips candidates with the hands-on vulnerability assessment skills needed to pass industry credentials like CompTIA Security+ and CEH.</p>
+            </div>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CLOSING CTA SECTION -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-container">
+          <h2 class="cta-title">Still Have Questions?</h2>
+          <p class="cta-text">
+            Reach out to our admissions and engineering team directly for personalized guidance regarding programs or technical partnerships.
+          </p>
+          <a href="/contact" class="btn btn-primary">Contact Our Admissions Team</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Footer Partial -->
+  <%- include('partials/footer') %>
+
+</body>
+</html>

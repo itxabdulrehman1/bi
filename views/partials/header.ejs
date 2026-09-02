@@ -1,0 +1,14 @@
+<% 
+  const headerTitle = typeof title !== 'undefined' ? title : 'Bi-Tech Marketing Solutions';
+  const headerSubtitle = typeof subtitle !== 'undefined' ? subtitle : '';
+%>
+<header class="page-header">
+  <div class="container">
+    <div class="page-header-content">
+      <h1 class="page-header-title"><%= headerTitle %></h1>
+      <% if (headerSubtitle) { %>
+        <p class="page-header-subtitle"><%= headerSubtitle %></p>
+      <% } %>
+    </div>
+  </div>
+</header>

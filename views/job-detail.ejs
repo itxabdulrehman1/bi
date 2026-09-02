@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <!-- Global Header Navigation Partial -->
+  <%- include('partials/nav') %>
+
+  <main>
+    <!-- Page Header Banner Partial -->
+    <%- include('partials/header', { 
+      title: job.title, 
+      subtitle: `${job.department} \u2022 ${job.location}` 
+    }) %>
+
+    <!-- JOB DETAIL SECTION -->
+    <section class="section">
+      <div class="container job-detail-container">
+        
+        <div class="job-detail-card">
+          
+          <div class="job-detail-header">
+            <div class="job-detail-meta" style="margin-bottom: 1rem;">
+              <span class="<%= job.type === 'Job' ? 'badge-job' : 'badge-internship' %>"><%= job.type %></span>
+              <span class="job-meta-pill"><%= job.department %></span>
+              <span class="job-meta-pill"><%= job.location %></span>
+              <span class="job-meta-pill"><%= job.duration %></span>
+              <span style="font-size: 0.85rem; color: var(--color-slate); margin-left: auto;">Posted <%= job.postedDate %></span>
+            </div>
+            <h1 class="job-detail-title"><%= job.title %></h1>
+            <p style="font-size: 1.1rem; color: var(--color-slate); margin-bottom: 0;"><%= job.description %></p>
+          </div>
+
+          <!-- Responsibilities Section -->
+          <div class="job-detail-section">
+            <h3>Key Responsibilities</h3>
+            <ul class="job-checklist">
+              <% job.responsibilities.forEach(item => { %>
+                <li><%= item %></li>
+              <% }); %>
+            </ul>
+          </div>
+
+          <!-- Requirements Section -->
+          <div class="job-detail-section">
+            <h3>Role Requirements</h3>
+            <ul class="job-checklist">
+              <% job.requirements.forEach(item => { %>
+                <li><%= item %></li>
+              <% }); %>
+            </ul>
+          </div>
+
+          <!-- Actions Bar -->
+          <div class="job-actions-bar">
+            <a href="/contact" class="btn btn-primary">Apply Now for This Position</a>
+            <a href="/jobs" class="text-link">&larr; Back to All Listings</a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer Partial -->
+  <%- include('partials/footer') %>
+
+</body>
+</html>

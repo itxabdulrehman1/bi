@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <!-- Global Header Navigation Partial -->
+  <%- include('partials/nav') %>
+
+  <main>
+    <!-- Page Header Banner Partial -->
+    <%- include('partials/header', { 
+      title: '404 - Page Not Found', 
+      subtitle: 'The page URL you entered could not be located on our server.' 
+    }) %>
+
+    <!-- 404 CONTENT SECTION -->
+    <section class="section" style="background-color: var(--color-paper); min-height: 50vh; display: flex; align-items: center;">
+      <div class="container">
+        
+        <div style="background-color: var(--color-ink); color: var(--color-paper); border-radius: var(--radius-max); padding: 3.5rem 2.5rem; max-width: 700px; border: 1px solid rgba(255, 255, 255, 0.1); border-left: 5px solid var(--color-signal);">
+          
+          <div style="font-family: var(--font-display); font-size: 4rem; font-weight: 800; color: var(--color-signal); line-height: 1; margin-bottom: 0.75rem;">
+            404
+          </div>
+
+          <h2 style="color: var(--color-paper); font-size: 2rem; margin-bottom: 1rem;">
+            Page Not Found
+          </h2>
+
+          <p style="color: rgba(245, 246, 243, 0.8); font-size: 1.1rem; line-height: 1.6; margin-bottom: 2rem; max-width: 55ch;">
+            The page you are attempting to access does not exist, may have been renamed, or is temporarily unavailable. Please verify the URL or navigate back to our primary pages.
+          </p>
+
+          <div style="display: flex; gap: 1.25rem; align-items: center; flex-wrap: wrap;">
+            <a href="/" class="btn btn-primary">&larr; Return to Home Page</a>
+            <a href="/jobs" class="btn btn-secondary" style="color: var(--color-paper); border-color: rgba(245, 246, 243, 0.3);">Browse Open Positions</a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer Partial -->
+  <%- include('partials/footer') %>
+
+</body>
+</html>

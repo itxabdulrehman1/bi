@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <!-- Global Header Navigation Partial -->
+  <%- include('partials/nav') %>
+
+  <main>
+    <!-- Page Header Banner Partial -->
+    <%- include('partials/header', { 
+      title: 'Listing Not Found', 
+      subtitle: 'The job or internship listing you are looking for is no longer active or does not exist.' 
+    }) %>
+
+    <section class="section">
+      <div class="container">
+        <div class="not-found-card">
+          <h2 style="font-size: 1.75rem; margin-bottom: 1rem; color: var(--color-ink);">Listing "<%= jobId %>" Not Found</h2>
+          <p style="color: var(--color-slate); font-size: 1.05rem; margin-bottom: 1.75rem;">
+            The requested position ID may have been filled, removed, or typed incorrectly. Please browse our current open listings to find relevant positions.
+          </p>
+          <div style="display: flex; gap: 1rem; align-items: center;">
+            <a href="/jobs" class="btn btn-primary">Browse Open Listings</a>
+            <a href="/" class="text-link">&larr; Return to Home</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer Partial -->
+  <%- include('partials/footer') %>
+
+</body>
+</html>

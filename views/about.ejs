@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <!-- Global Header Navigation Partial -->
+  <%- include('partials/nav') %>
+
+  <main>
+    <!-- Page Header Banner Partial -->
+    <%- include('partials/header', { 
+      title: 'About Bi-Tech Marketing Solutions', 
+      subtitle: 'Bridging the gap between computer science education and real-world industry demand.' 
+    }) %>
+
+    <!-- SECTION 1: COMPANY STORY -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-heading">Our Story</h2>
+        </div>
+        <div class="story-content">
+          <p>
+            Bi-Tech Marketing Solutions was established to address a critical disconnect in the software industry: the gap between academic computer science theory and the production-level skills required by modern tech enterprises. 
+          </p>
+          <p>
+            Operating as both an active software house and an engineering incubator, we specialize in structured paid internships, junior software developer placements, hands-on cybersecurity auditing, and tech business growth strategies. 
+          </p>
+          <p>
+            Through our dual-mission model, we deliver real-world software applications for corporate clients while providing ambitious engineering candidates with direct mentorship, rigorous code reviews, and production deployment experience.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: MISSION & VISION -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-heading">Mission & Vision</h2>
+          <p>Our guiding principles driving engineering excellence and career growth.</p>
+        </div>
+
+        <div class="mission-vision-grid">
+          <div class="mission-box">
+            <h3>Our Mission</h3>
+            <p>To equip aspiring tech professionals with real-world experience, mentorship, and career opportunities that bridge the gap between education and industry.</p>
+          </div>
+
+          <div class="vision-box">
+            <h3>Our Vision</h3>
+            <p>To become the leading launchpad for tech talent in the region, known for producing job-ready graduates and skilled cybersecurity professionals.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: CORE VALUES (Hairline-Border Style) -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-heading">Core Values</h2>
+          <p>The core values that govern our software development and candidate training.</p>
+        </div>
+
+        <div class="grid-features">
+          <div class="feature-card">
+            <div class="feature-icon">01</div>
+            <h3>Integrity</h3>
+            <p>Uncompromising engineering ethics, transparent security audits, and strict client data confidentiality.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">02</div>
+            <h3>Innovation</h3>
+            <p>Continuous adoption of modern web frameworks, cloud microservices, and offensive/defensive security tools.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">03</div>
+            <h3>Mentorship</h3>
+            <p>One-on-one pair programming, architecture reviews, and career coaching from experienced engineers.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">04</div>
+            <h3>Growth</h3>
+            <p>Accelerating sustainable technical careers for candidates and tangible ROI for enterprise business partners.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: MEET THE TEAM -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-heading">Meet the Team</h2>
+          <p>The leadership driving our software house operations and mentorship tracks.</p>
+        </div>
+
+        <div class="team-grid">
+          <!-- Team Card 1 -->
+          <div class="team-card">
+            <div class="team-avatar">BT</div>
+            <h3>Bilal Tariq</h3>
+            <div class="team-role">Founder & CEO</div>
+            <p class="team-bio">Software architect and tech strategist dedicated to creating regional engineering opportunities.</p>
+          </div>
+
+          <!-- Team Card 2 -->
+          <div class="team-card">
+            <div class="team-avatar">AH</div>
+            <h3>Ali Hassan</h3>
+            <div class="team-role">Head of Software Engineering</div>
+            <p class="team-bio">Full-stack lead with 8+ years building cloud-native microservices and web platforms.</p>
+          </div>
+
+          <!-- Team Card 3 -->
+          <div class="team-card">
+            <div class="team-avatar">FA</div>
+            <h3>Fatima Ahmed</h3>
+            <div class="team-role">Cybersecurity Lead</div>
+            <p class="team-bio">Certified penetration tester specializing in OWASP security audits and threat modeling.</p>
+          </div>
+
+          <!-- Team Card 4 -->
+          <div class="team-card">
+            <div class="team-avatar">ZK</div>
+            <h3>Zainab Khan</h3>
+            <div class="team-role">HR & Business Development Manager</div>
+            <p class="team-bio">Connecting vetted engineering talent with high-growth enterprise client teams.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: STATS STRIP -->
+    <section class="stats-strip-section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Interns Trained</div>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-number">15+</div>
+            <div class="stat-label">Ongoing Projects</div>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-number">10+</div>
+            <div class="stat-label">Corporate Partners</div>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-number">3</div>
+            <div class="stat-label">Years of Operation</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer Partial -->
+  <%- include('partials/footer') %>
+
+</body>
+</html>

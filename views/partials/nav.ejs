@@ -1,0 +1,63 @@
+<% const activePath = typeof currentPath !== 'undefined' ? currentPath : ''; %>
+<nav class="site-nav">
+  <div class="nav-container">
+    <a href="/" class="nav-brand">
+      <span class="brand-name">Bi-Tech Marketing Solutions</span>
+    </a>
+
+    <!-- Desktop Navigation Links -->
+    <div class="nav-links">
+      <a href="/" class="nav-link <%= activePath === '/' ? 'active' : '' %>">Home</a>
+      <a href="/about" class="nav-link <%= activePath === '/about' ? 'active' : '' %>">About Us</a>
+      <a href="/services" class="nav-link <%= activePath === '/services' ? 'active' : '' %>">Services</a>
+      <a href="/jobs" class="nav-link <%= activePath.startsWith('/jobs') ? 'active' : '' %>">Jobs & Internships</a>
+      <a href="/faqs" class="nav-link <%= activePath === '/faqs' ? 'active' : '' %>">FAQs</a>
+      <a href="/contact" class="nav-link btn-nav <%= activePath === '/contact' ? 'active' : '' %>">Contact</a>
+    </div>
+
+    <!-- Mobile Hamburger Toggle -->
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span class="hamburger-bar"></span>
+      <span class="hamburger-bar"></span>
+      <span class="hamburger-bar"></span>
+    </button>
+  </div>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="mobile-drawer-inner">
+      <a href="/" class="mobile-nav-link <%= activePath === '/' ? 'active' : '' %>">Home</a>
+      <a href="/about" class="mobile-nav-link <%= activePath === '/about' ? 'active' : '' %>">About Us</a>
+      <a href="/services" class="mobile-nav-link <%= activePath === '/services' ? 'active' : '' %>">Services</a>
+      <a href="/jobs" class="mobile-nav-link <%= activePath.startsWith('/jobs') ? 'active' : '' %>">Jobs & Internships</a>
+      <a href="/faqs" class="mobile-nav-link <%= activePath === '/faqs' ? 'active' : '' %>">FAQs</a>
+      <a href="/contact" class="mobile-nav-link mobile-btn <%= activePath === '/contact' ? 'active' : '' %>">Contact Us</a>
+    </div>
+  </div>
+</nav>
+
+<script>
+  (function() {
+    const toggle = document.getElementById('navToggle');
+    const drawer = document.getElementById('mobileDrawer');
+    if (!toggle || !drawer) return;
+
+    toggle.addEventListener('click', function() {
+      const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', !isOpen);
+      toggle.classList.toggle('is-active');
+      drawer.classList.toggle('is-open');
+      drawer.setAttribute('aria-hidden', isOpen);
+    });
+
+    const mobileLinks = drawer.querySelectorAll('.mobile-nav-link');
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.classList.remove('is-active');
+        drawer.classList.remove('is-open');
+        drawer.setAttribute('aria-hidden', 'true');
+      });
+    });
+  })();
+</script>

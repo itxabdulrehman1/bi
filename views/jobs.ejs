@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <!-- Global Header Navigation Partial -->
+  <%- include('partials/nav') %>
+
+  <main>
+    <!-- Page Header Banner Partial -->
+    <%- include('partials/header', { 
+      title: 'Open Positions & Internship Tracks', 
+      subtitle: 'Explore active engineering roles, cybersecurity labs, and business development internships.' 
+    }) %>
+
+    <!-- JOBS LISTING SECTION -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-heading">Current Listings (<%= jobs.length %>)</h2>
+          <p>Filter through available career opportunities and structured internship positions.</p>
+        </div>
+
+        <div class="jobs-grid">
+          <% jobs.forEach(job => { %>
+            <div class="job-card">
+              <div class="job-card-header">
+                <span class="<%= job.type === 'Job' ? 'badge-job' : 'badge-internship' %>"><%= job.type %></span>
+                <span style="font-size: 0.8rem; color: var(--color-slate);">Posted <%= job.postedDate %></span>
+              </div>
+              <h3><%= job.title %></h3>
+              <div class="job-dept"><%= job.department %></div>
+              
+              <div class="job-meta-pills">
+                <span class="job-meta-pill"><%= job.location %></span>
+                <span class="job-meta-pill"><%= job.duration %></span>
+              </div>
+
+              <p><%= job.description %></p>
+
+              <div class="job-card-actions">
+                <a href="/jobs/<%= job.id %>" class="btn btn-secondary" style="width: 100%; text-align: center;">View Details &rarr;</a>
+              </div>
+            </div>
+          <% }); %>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLOSING CTA SECTION -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-container">
+          <h2 class="cta-title">Don't See a Specific Position That Matches?</h2>
+          <p class="cta-text">
+            Submit an open application or contact our engineering admissions team to discuss upcoming cohort intakes.
+          </p>
+          <a href="/contact" class="btn btn-primary">Contact Our Admissions Team</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Footer Partial -->
+  <%- include('partials/footer') %>
+
+</body>
+</html>
