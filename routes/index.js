@@ -138,7 +138,7 @@ router.post('/contact', (req, res) => {
 
     /* 
      * PRODUCTION NOTE: In production, Nodemailer (e.g. nodemailer.createTransport(...))
-     * would be invoked here to dispatch real emails directly to info@bitechmarketing.com 
+     * would be invoked here to dispatch real emails directly to info@bitechmarketingsolution.online 
      * and auto-reply confirmation to ${newSubmission.email}.
      */
 

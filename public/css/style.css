@@ -827,6 +827,100 @@ textarea.form-control {
 }
 
 /* ==========================================================================
+   TESTIMONIALS SECTION (views/index.ejs)
+   ========================================================================== */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.75rem;
+}
+
+.testimonial-card {
+  background-color: #FFFFFF;
+  border: 1px solid var(--color-border-light);
+  border-left: 4px solid var(--color-signal);
+  border-radius: var(--radius-max);
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  transition: border-color 150ms ease-in-out;
+}
+
+.testimonial-card:hover {
+  border-color: rgba(47, 111, 237, 0.4);
+  border-left-color: var(--color-signal);
+}
+
+.testimonial-content p {
+  color: var(--color-ink);
+  font-size: 0.95rem;
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+.testimonial-author strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-ink);
+}
+
+.testimonial-author span {
+  font-size: 0.85rem;
+  color: var(--color-slate);
+}
+
+/* ==========================================================================
+   RECOGNITION & PARTNERS STRIP (views/about.ejs)
+   ========================================================================== */
+.partners-strip-section {
+  padding: 2.5rem 0;
+  border-bottom: 1px solid var(--color-border-light);
+  background-color: var(--color-paper);
+}
+
+.partners-title {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-slate);
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+.partners-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem 2rem;
+}
+
+.partner-badge {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--color-slate);
+  opacity: 0.75;
+  letter-spacing: -0.02em;
+  padding: 0.4rem 1rem;
+  border: 1px solid var(--color-border-light);
+  border-radius: 2px;
+  background-color: #FFFFFF;
+  transition: opacity 150ms ease, border-color 150ms ease;
+}
+
+.partner-badge:hover {
+  opacity: 1;
+  border-color: var(--color-signal);
+}
+
+/* ==========================================================================
    RESPONSIVE MEDIA QUERIES
    ========================================================================== */
 @media (max-width: 900px) {
