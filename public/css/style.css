@@ -902,6 +902,125 @@ textarea.form-control {
 }
 
 /* ==========================================================================
+   FAQ ACCORDION & GROUPS STYLES
+   ========================================================================== */
+.faq-group {
+  margin-bottom: 3.5rem;
+}
+
+.faq-group:last-child {
+  margin-bottom: 0;
+}
+
+.faq-group-header {
+  margin-bottom: 1.75rem;
+  text-align: left;
+}
+
+.faq-group-primary .faq-group-title {
+  font-size: 2.25rem;
+  color: var(--color-ink);
+  margin-bottom: 0.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.faq-group-secondary {
+  padding-top: 2.5rem;
+  border-top: 2px dashed var(--color-border-light);
+}
+
+.faq-group-secondary .faq-group-title {
+  font-size: 1.75rem;
+  color: var(--color-ink);
+  margin-bottom: 0.5rem;
+}
+
+.faq-group-subtitle {
+  color: var(--color-slate);
+  font-size: 1.05rem;
+  margin-bottom: 0;
+}
+
+.faq-accordion-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.faq-accordion-item {
+  background-color: #FFFFFF;
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-max);
+  overflow: hidden;
+  transition: border-color 150ms ease-in-out, box-shadow 150ms ease-in-out;
+}
+
+.faq-accordion-item[open] {
+  border-color: var(--color-ink);
+  border-left: 4px solid var(--color-signal);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.faq-accordion-item:hover {
+  border-color: rgba(20, 21, 15, 0.35);
+}
+
+.faq-accordion-summary {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-ink);
+  padding: 1.25rem 1.5rem;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+  transition: color 150ms ease-in-out;
+}
+
+.faq-accordion-summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-accordion-summary::after {
+  content: "+";
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--color-ink);
+  line-height: 1;
+  margin-left: 1rem;
+  flex-shrink: 0;
+  transition: transform 200ms ease-in-out, color 200ms ease-in-out;
+}
+
+.faq-accordion-item[open] .faq-accordion-summary::after {
+  content: "−";
+  color: var(--color-ink);
+}
+
+.faq-accordion-summary:hover {
+  color: #000000;
+}
+
+.faq-accordion-body {
+  padding: 0 1.5rem 1.25rem 1.5rem;
+  border-top: 1px solid rgba(20, 21, 15, 0.05);
+  margin-top: 0;
+  padding-top: 1rem;
+}
+
+.faq-accordion-body p {
+  color: var(--color-slate);
+  font-size: 0.98rem;
+  line-height: 1.65;
+  margin-bottom: 0;
+}
+
+/* ==========================================================================
    CLOSING CTA SECTION
    ========================================================================== */
 .cta-section {
