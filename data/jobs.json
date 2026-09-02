@@ -6,64 +6,20 @@
     "department": "Software Development",
     "location": "Chishtian, Punjab (On-site)",
     "duration": "Full-time",
-    "description": "We are seeking an ambitious Junior Full-Stack Developer to work alongside senior engineers building web applications for enterprise clients using Node.js, Express, EJS, and modern frontend technologies.",
+    "description": "We are seeking a motivated Junior Full-Stack Developer to join our team in Chishtian. You will work alongside senior developers to build and maintain web applications and custom client tools using Node.js, Express, EJS, and modern frontend technologies.",
     "responsibilities": [
-      "Develop responsive user interfaces and modular EJS/HTML templates",
-      "Build RESTful APIs and integrate server-side logic in Express.js",
-      "Collaborate on database schema design, queries, and migrations",
-      "Participate in daily standups, code reviews, and Git version control workflows"
+      "Develop responsive website layouts and template views using HTML5, CSS, and EJS",
+      "Build server-side routes, form handlers, and REST APIs in Node.js and Express",
+      "Connect and query relational or JSON datasets for web application features",
+      "Maintain clean code, fix reported bugs, and collaborate using Git version control"
     ],
     "requirements": [
-      "Bachelor's degree in Computer Science, Software Engineering, or equivalent experience",
-      "Proficiency in JavaScript (ES6+), HTML5, CSS3, and Node.js fundamentals",
-      "Familiarity with SQL databases and REST API principles",
-      "Strong problem-solving skills and eager desire to learn enterprise practices"
+      "Degree or diploma in Computer Science, Software Engineering, or equivalent practical experience",
+      "Solid foundation in JavaScript (ES6+), HTML5, CSS3, and Node.js fundamentals",
+      "Familiarity with Express routing, REST concepts, and basic database operations",
+      "Good communication, attention to detail, and willingness to learn on real client projects"
     ],
     "postedDate": "2026-08-20"
-  },
-  {
-    "id": "cybersecurity-intern",
-    "title": "Cybersecurity Research Intern",
-    "type": "Internship",
-    "department": "Cybersecurity",
-    "location": "Chishtian, Punjab (On-site)",
-    "duration": "3 Months",
-    "description": "Join our security research team for an intensive 3-month hands-on internship focusing on web application security audits, vulnerability assessment labs, and threat modeling.",
-    "responsibilities": [
-      "Perform vulnerability scans and OWASP Top 10 security audits on test environments",
-      "Assist in writing detailed security assessment reports and mitigation strategies",
-      "Analyze network traffic logs and practice incident response procedures",
-      "Participate in weekly security research workshops and CTF challenge labs"
-    ],
-    "requirements": [
-      "Enrolled in or recent graduate of CS, Cybersecurity, or IT degree program",
-      "Foundational knowledge of TCP/IP networking, Linux commands, and web protocols",
-      "Familiarity with security tools such as Wireshark, Burp Suite, or Nmap",
-      "High ethical standards and passion for defensive security"
-    ],
-    "postedDate": "2026-08-22"
-  },
-  {
-    "id": "nodejs-backend-intern",
-    "title": "Node.js Backend Developer Intern",
-    "type": "Internship",
-    "department": "Software Development",
-    "location": "Remote",
-    "duration": "6 Months",
-    "description": "An immersive backend engineering internship designed to give computer science students hands-on experience building asynchronous microservices and API gateways.",
-    "responsibilities": [
-      "Write clean, modular Node.js controller logic and middleware components",
-      "Optimize relational and NoSQL database queries for high throughput",
-      "Write automated unit tests using Jest and API integration tests",
-      "Document API endpoints utilizing OpenAPI / Swagger specifications"
-    ],
-    "requirements": [
-      "Basic proficiency in JavaScript/Node.js and core data structures",
-      "Understanding of HTTP status codes, JSON payload structure, and CRUD operations",
-      "Familiarity with Git branching strategies and pull request workflows",
-      "Self-motivated learner capable of working effectively in remote settings"
-    ],
-    "postedDate": "2026-08-25"
   },
   {
     "id": "digital-marketing-intern",
@@ -72,63 +28,19 @@
     "department": "Business Development",
     "location": "Chishtian, Punjab (On-site)",
     "duration": "3 Months",
-    "description": "A practical business operations internship designed for marketing and management students looking to gain real experience in tech sales, CRM management, and B2B client acquisition.",
+    "description": "A 3-month hands-on internship supporting live client campaigns at our agency. You will work closely with our marketing team on social media management, paid advertising, and content creation while gaining practical agency experience.",
     "responsibilities": [
-      "Assist in running targeted B2B digital marketing and outreach campaigns",
-      "Manage lead pipelines and update records in enterprise CRM software",
-      "Draft technical proposal documentation and software service decks",
-      "Analyze campaign metrics and present weekly growth insights"
+      "Assist in managing social media pages, drafting post captions, and scheduling content",
+      "Support campaign setup and reporting for Meta and Google advertising accounts",
+      "Write engaging blog posts, service summaries, and marketing copy for clients",
+      "Track daily engagement metrics and organize client inquiry logs"
     ],
     "requirements": [
-      "Degree in Business Administration, Marketing, CS, or related field",
-      "Strong written and verbal communication skills in English",
-      "Familiarity with digital marketing tools, analytics, and CRM concepts",
-      "Proactive attitude and strong organizational skills"
+      "Currently enrolled in or recent graduate of Marketing, Business, Communication, or CS programs",
+      "Strong written communication skills and interest in digital marketing trends",
+      "Basic familiarity with social platforms, Google Workspace, and Canva or graphics tools",
+      "Eager attitude to learn agency operations and client management hands-on"
     ],
     "postedDate": "2026-08-26"
-  },
-  {
-    "id": "qa-testing-intern",
-    "title": "QA & Software Testing Intern",
-    "type": "Internship",
-    "department": "Quality Assurance",
-    "location": "Chishtian, Punjab (On-site)",
-    "duration": "3 Months",
-    "description": "Learn modern software quality assurance practices, manual test execution, regression testing, and automated test script writing in a fast-paced software house environment.",
-    "responsibilities": [
-      "Write detailed test plans, test cases, and bug replication reports",
-      "Perform cross-browser and mobile responsive UI validation checks",
-      "Collaborate with developers to verify issue resolutions and bug fixes",
-      "Learn automated E2E testing tools such as Cypress or Playwright"
-    ],
-    "requirements": [
-      "CS/IT background with acute attention to detail",
-      "Understanding of Software Development Life Cycle (SDLC) models",
-      "Ability to articulate technical bug reproduction steps clearly",
-      "Interest in automated testing frameworks and quality engineering"
-    ],
-    "postedDate": "2026-08-28"
-  },
-  {
-    "id": "senior-software-engineer",
-    "title": "Senior Software Engineer",
-    "type": "Job",
-    "department": "Software Development",
-    "location": "Hybrid",
-    "duration": "Full-time",
-    "description": "We are hiring a Senior Software Engineer to lead client project deliveries, architect scalable cloud backends, and mentor our cohort of software development interns.",
-    "responsibilities": [
-      "Architect and implement scalable Node.js microservices and web apps",
-      "Perform code reviews and mentor junior developers and interns",
-      "Lead technical client discovery sessions and system architecture design",
-      "Enforce CI/CD pipelines, automated testing, and security standards"
-    ],
-    "requirements": [
-      "4+ years of professional software engineering experience with Node.js/JavaScript",
-      "Proven track record delivering enterprise-grade web applications",
-      "Deep understanding of database architecture, caching, and security",
-      "Strong leadership ability and passion for mentoring technical talent"
-    ],
-    "postedDate": "2026-08-15"
   }
 ]
